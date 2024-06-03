@@ -1,0 +1,151 @@
+.game {
+  text-align: center;
+  padding: 20px;
+}
+
+.photo-container {
+  margin-bottom: 20px;
+}
+
+.question-mark-container {
+  width: 500px; /* Dikdörtgenin genişliği */
+  height: 200px; /* Dikdörtgenin yüksekliği */
+  border: 2px solid #4A4A4A;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; /* Ekrana ortalamak için */
+}
+
+
+.question-mark {
+  font-size: 100px;
+  color: #4A4A4A;
+}
+
+.game-description {
+  margin-bottom: 20px;
+  font-size: 20px; /* Yazıları büyütelim */
+  color: #4A4A4A;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align the content */
+  text-align: center;
+}
+
+.game-description ul {
+  padding-left: 0; /* Remove default padding */
+  list-style-position: inside; /* Align bullets with the text */
+  margin: 0; /* Remove default margin */
+}
+
+.game-description li {
+  display: list-item;
+  text-align: left; /* Ensure text starts from the same point */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.button-container button {
+  padding: 12px 24px; /* Buton boyutunu artıralım */
+  font-size: 18px; /* Yazı boyutunu artıralım */
+  background-color: #4A4A4A;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+  background-color: #383838;
+}
+
+.hint-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align to the left */
+  text-align: left; /* Left align text within the hints */
+  margin-top: 20px;
+}
+
+.hint-list.showPhoto {
+  margin-top: 0; /* Reset the top margin for showPhoto */
+}
+
+.hint {
+  margin: 10px 0;
+  font-size: 18px; /* Yazı boyutunu artıralım */
+}
+
+.guess-input {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.guess-input input {
+  padding: 8px; /* Input boyutunu artıralım */
+  font-size: 18px; /* Yazı boyutunu artıralım */
+  margin-right: 10px;
+}
+
+.guess-input button {
+  padding: 12px 24px; /* Buton boyutunu artıralım */
+  font-size: 18px; /* Yazı boyutunu artıralım */
+}
+
+.guess-list {
+  text-align: left;
+  max-width: 300px;
+  margin: 0 auto 20px auto;
+}
+
+.guess-count {
+  margin-top: 20px;
+  font-size: 20px; /* Yazı boyutunu artıralım */
+  font-weight: bold;
+}
+
+.game-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 80%;
+  margin: 0 auto;
+  flex-wrap: wrap; /* Allow wrapping for responsive design */
+}
+
+.photo-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.game-content .hint-list,
+.game-content .guess-list {
+  flex: 1;
+  margin: 10px;
+}
+
+.guess-list {
+  margin-top: 20px;
+  text-align: left;
+  max-width: 300px;
+  margin: 20px auto;
+}
+
+.guess-item {
+  padding: 12px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
